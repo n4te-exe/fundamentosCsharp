@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MeuApp
 {
@@ -6,7 +6,19 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MeuMetodo();
+            string nome = RetornaNome("natã", "vicente");
+            Console.WriteLine(nome);
+        }
+
+        static void MeuMetodo()
+        {
+            Console.WriteLine("C# is cool");
+        }
+
+        static string RetornaNome(string nome, string sobrenome)
+        {
+            return nome + " " + sobrenome;
         }
     }
 }
